@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rebeca | Aulas de Inglês Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Rebeca.</h1>
+    <nav>
+      <ul>
+        <li class="active">
+          <a href="index.html">Início</a>
+        </li>
+        <li>
+          <a href="sobre.html">Sobre</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="apresentacao">
+      <div class="metade">
+        <h2>Aprenda inglês<br>sem sair de casa</h2>
+        <p>
+          Tenha aulas particulares que respeitam o seu ritmo de aprendizado
+          e evolua sua fluência no idioma da forma mais consistente possível.
+        </p>
+        <button>Agende uma aula grátis</button>
+      </div>
+      <div class="metade">
+        <img src="imagens/aula-online.svg" alt="desenho de um homem tendo aula online com uma mulher" />
+      </div>
+    </section>
+    <section id="informacoes">
+      <div class="metade">
+        <img src="imagens/conversa.svg" alt="desenho de um homem e uma mulher dentro de balões de fala" />
+      </div>
+      <div class="metade">
+        <h2>Aprenda de forma<br>eficiente e divertida</h2>
+        <p>
+          Aprender inglês não precisa ser algo chato e monótono.
+          Em nossas aulas, a gramática sempre será apresentada dentro de um contexto,
+          visando o uso real do idioma.
+        </p>
+        <p>
+          Além disso, a pronúncia correta sempre será reforçada para que você tenha
+          total segurança ao conversar com outras pessoas.
+        </p>
+      </div>
+    </section>
+    <section id="planos">
+      <h2>Opções de planos<br>para cada necessidade</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plano</th>
+            <th>Descrição</th>
+            <th>Frequência</th>
+            <th>Investimento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aprendendo do Zero</td>
+            <td>Ideal para quem está começando a aprender inglês.</td>
+            <td>3h/semana</td>
+            <td>R$150,00/mês</td>
+          </tr>
+          <tr>
+            <td>Rumo à Fluência</td>
+            <td>Conteúdos avançados para que já sabe bastante.</td>
+            <td>1h/semana</td>
+            <td>R$50,00/mês</td>
+          </tr>
+          <tr>
+            <td>Pronto para Viajar</td>
+            <td>Tudo que é necessário para viajar ao exterior.</td>
+            <td>5 horas</td>
+            <td>R$80,00</td>
+          </tr>
+          <tr>
+            <td>Dúvidas Jamais</td>
+            <td>Tire dúvidas sobre conteúdos específicos.</td>
+            <td>1 hora</td>
+            <td>R$30,00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Nenhum desses encaixa com sua necessidade?</td>
+            <td colspan="2">Entre em contato!</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section id="contato">
+      <h2>Entre em contato</h2>
+      <form>
+        <div class="linha">
+          <div>
+            <label for="nome">Nome <span class="asterisco">*</span></label>
+            <input name="nome" type="text" id="nome" placeholder="Rebeca" required />
+          </div>
+          <div>
+            <label for="celular">Celular</label>
+            <input type="tel" name="celular" id="celular" placeholder="84998765432"/>
+          </div>
+        </div>
+
+        <div class="linha">
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="meu.melhor@email.com"/>
+          </div>
+          <div>
+            <label for="assunto">Assunto <span class="asterisco">*</span></label>
+            <select name="assunto" id="assunto" required>
+              <option selected disabled>Selecionar assunto</option>
+              <option value="duvida">Dúvida</option>
+              <option value="aula">Agendamento de Aula</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+        </div>
+        <label for="mensagem">Mensagem <span class="asterisco">*</span></label>
+        <textarea name="mensagem" id="mensagem" rows="10" required></textarea>
+        <div class="linha">
+          <span><span class="asterisco">*</span> campo obrigatório</span>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <span>Todos os direitos reservados &#169;</span>
+  </footer>
+</body>
+</html>
