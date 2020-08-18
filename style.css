@@ -36,9 +36,13 @@ h2 {
   font-size: 32px;
 }
 
-p {
+section p {
   width: 75%;
   line-height: 24px;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 header h1 {
@@ -91,7 +95,7 @@ section#informacoes p {
   margin-top: 16px;
 }
 
-section#informacoes h2, p {
+section#informacoes h2, section#informacoes p {
   margin-left: 15%;
 }
 
@@ -180,4 +184,77 @@ section#contato button {
 footer .metade {
   display: flex;
   flex-direction: column;
+}
+
+#painel {
+  background-color: rgba(0,0,0,0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 200ms;
+}
+
+#painel.fechado {  
+  pointer-events: none;
+  opacity: 0;
+  /* left: 100%; */
+}
+
+#painel.aberto {
+  opacity: 1;
+}
+
+#painel .conteudo {
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  padding: 5vw;
+  width: 50%;
+  height: 100%;
+  transition: 500ms;
+}
+
+#painel.fechado .conteudo {
+  margin-left: 100%;  
+}
+
+#painel.aberto .conteudo {
+  margin-left: 50%;
+}
+
+.fechar {
+  font-weight: bold;
+  background-color: #df4c73;
+  color: white;
+  padding: 5px 20px 5px 10px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#painel .perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#painel .perfil img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+#painel .perfil p {
+  margin-top: 30px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.social {
+  margin-top: 16px;
+}
+
+.social img {
+  max-width: 32px;
 }

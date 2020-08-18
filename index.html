@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Rebeca | Aulas de Inglês Online</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="imagens/favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
           <a href="index.html">Início</a>
         </li>
         <li>
-          <a href="sobre.html">Sobre</a>
+          <a onclick="abrirPainel()">Sobre</a>
         </li>
       </ul>
     </nav>
@@ -28,7 +29,7 @@
           Tenha aulas particulares que respeitam o seu ritmo de aprendizado
           e evolua sua fluência no idioma da forma mais consistente possível.
         </p>
-        <button>Agende uma aula grátis</button>
+        <a href="#contato"><button>Agende uma aula grátis</button></a>
       </div>
       <div class="metade">
         <img src="imagens/aula-online.svg" alt="desenho de um homem tendo aula online com uma mulher" />
@@ -137,5 +138,27 @@
   <footer>
     <span>Todos os direitos reservados &#169;</span>
   </footer>
+  <div id="painel" class="fechado">
+    <div class="conteudo">
+      <a class="fechar" onclick="fecharPainel()">< Fechar</a>
+      <h2>Sobre mim</h2>
+      <div class="perfil">
+        <img src="imagens/perfil.png" />
+        <p>
+          Sou técnico em informática pelo IFRN e atualmente estou cursando o bacharelado em
+          Tecnologia da Informação na UFRN, onde também faço parte do programa Talento Metrópole.
+          Iniciei no mundo da programação aos 13 anos, quando comecei a aprender desenvolvimento de jogos
+          com Unity, posteriormente me apaixonei pelo desenvolvimento web, principalmente o front-end,
+          e mais recentemente conheci a área de data science, a qual tenho me aventurado.
+        </p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/edu-sarmento/" target="_blank"><img src="imagens/linkedin.svg" /></a>
+          <a href="https://github.com/edusrmt" target="_blank"><img src="imagens/github.svg" /></a>
+          <a href="https://www.instagram.com/edusrmt/" target="_blank"><img src="imagens/instagram.svg" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
